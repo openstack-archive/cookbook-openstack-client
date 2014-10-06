@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf', '~> 3.1.5'
+gem 'chef', '~> 11.6'
+gem 'rake', '~> 10.0'
+gem 'rubocop', '~> 0.20'
+gem 'foodcritic'
+gem 'chefspec', '~> 4.0.0'
+gem 'test-kitchen'
+gem 'kitchen-vagrant'
+gem 'guard', '>= 2.6'
+gem 'guard-rubocop', '>= 1.1'
+gem 'guard-foodcritic', '>= 1.0.2'
