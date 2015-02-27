@@ -1,19 +1,21 @@
-# Rubocop,  we're buddies and all,  but we're going to have to disagree on the following
-
 AllCops:
- Exclude:
-   - berks-cookbooks/**
-   - Guardfile
-
-Encoding:
-  Exclude:
+  Include:
+    - metadata.rb
     - Gemfile
-
-WordArray:
-  MinSize: 3
+    - attributes/**
+    - libraries/**
+    - providers/**
+    - recipes/**
+    - resources/**
+    - spec/**
+  Exclude:
+    - .cookbooks/**/*
+    - berks-cookbooks/**/*
+    - .bundle/**/*
 
 Encoding:
   Exclude:
+    - metadata.rb
     - Gemfile
 
 NumericLiterals:

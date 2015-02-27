@@ -1,21 +1,9 @@
-*~
-*#
-.#*
-\#*#
-.*.sw[a-z]
-*.un~
-pkg/
-
-# Berkshelf
-.vagrant
-berks-cookbooks/*
-Berksfile.lock
-
-# Bundler
-Gemfile.lock
-bin/
 .bundle/
-
+berks-cookbooks/
+.kitchen
+.vagrant
 .coverage/
-.kitchen/
-.kitchen.local.yml
+*.swp
+Berksfile.lock
+Vagrantfile
+Gemfile.lock

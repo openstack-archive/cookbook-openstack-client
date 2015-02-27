@@ -9,6 +9,5 @@ describe 'openstack-client::default' do
     it 'writes some chefspec code' do
       skip 'todo'
     end
-
   end
 end
