@@ -4,6 +4,7 @@ AllCops:
  Exclude:
    - berks-cookbooks/**
    - Guardfile
+   - .bundle/**
 
 Encoding:
   Exclude:

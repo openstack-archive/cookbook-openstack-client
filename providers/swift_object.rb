@@ -40,7 +40,6 @@ def load_current_resource
 end
 
 action :create do
-
   f = Tempfile.new('download')
 
   f.binmode if new_resource.binmode
@@ -62,7 +61,6 @@ action :create do
 end
 
 action :create_if_missing do
-
   unless current_resource.exists
     action_create
     new_resource.updated_by_last_action(true)

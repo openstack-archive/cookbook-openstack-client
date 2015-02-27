@@ -1,7 +1,6 @@
 # Encoding: utf-8
 
 namespace :prepare do
-
   desc 'Install ChefDK'
   task :chefdk do
     begin
@@ -24,7 +23,6 @@ namespace :prepare do
   task :berks do
     sh %(chef exec berks vendor)
   end
-
 end
 
 desc 'Install required Gems and Cookbooks'
