@@ -7,12 +7,12 @@ require 'chef/application'
 ::LOG_LEVEL = :fatal
 ::UBUNTU_OPTS = {
   platform: 'ubuntu',
-  version: '12.04',
+  version: '14.04',
   log_level: ::LOG_LEVEL
 }
 REDHAT_OPTS = {
   platform: 'redhat',
-  version: '6.5',
+  version: '7.1',
   log_level: LOG_LEVEL
 }
 ::CHEFSPEC_OPTS = {
