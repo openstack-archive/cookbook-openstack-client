@@ -7,3 +7,5 @@ berks-cookbooks/
 Berksfile.lock
 Vagrantfile
 Gemfile.lock
+local-mode-cache
+nodes/
