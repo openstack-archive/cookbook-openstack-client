@@ -7,11 +7,19 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
-  - name: ubuntu-12.04
+  - name: centos-6.6
+  - name: centos-7.0
 
 suites:
   - name: default
     run_list:
-      - recipe[openstack::default]
-      - recipe[openstack::_example_swift]
+      - recipe[openstack_client::default]
+    attributes:
+  - name: swift
+    run_list:
+      - recipe[openstack_client::_example_swift]
+    attributes:
+  - name: nova
+    run_list:
+      - recipe[openstack_client::_example_nova]
     attributes:

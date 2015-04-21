@@ -8,26 +8,25 @@
 
 # Required to install fog
 
-if platform_family?('debian')
+case node['platform_family']
+when 'debian'
   node.override['apt']['compile_time_update'] = true
   include_recipe 'apt'
+
+  node.set['build-essential']['compile_time'] = true
+  include_recipe 'build-essential'
+when 'redhat'
+  include_recipe 'yum'
 end
 
-node.set['build-essential']['compile_time'] = true
-include_recipe 'build-essential'
+include_recipe 'xml::ruby'
 
 chef_gem 'nokogiri' do
   version node['openstack-client']['nokogiri_version']
   action :upgrade
 end
 
-include_recipe 'xml::ruby'
-
 chef_gem 'fog' do
   version node['openstack-client']['fog_version']
   action :upgrade
 end
-
-# Load fog for the cloud_monitoring library
-# https://sethvargo.com/using-gems-with-chef/
-require 'fog'
