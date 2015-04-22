@@ -1,5 +1,5 @@
 # Encoding: utf-8
-name 'openstack_client'
+name 'openstack-client'
 maintainer 'openstack-chef'
 maintainer_email 'opscode-chef-openstack@googlegroups.com'
 license 'Apache2'
