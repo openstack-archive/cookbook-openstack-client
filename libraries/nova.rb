@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: openstack-client
+# Cookbook Name:: openstack_client
 # Library:: nova
 # Author:: JJ Asghar
 #

@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure('2') do |config|
-  config.vm.hostname = 'openstack-client'
+  config.vm.hostname = 'openstack_client'
   config.vm.box = 'ubuntu-12.04'
   config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_#{config.vm.box}_chef-provisionerless.box"
   config.omnibus.chef_version = 'latest'
@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
     }
 
     chef.run_list = [
-      'recipe[openstack-client::default]'
+      'recipe[openstack_client::default]'
     ]
   end
 end

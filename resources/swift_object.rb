@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: openstack-client
+# Cookbook Name:: openstack_client
 # Resource:: swift
 # Author:: Paul Czarkowski
 #

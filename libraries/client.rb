@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: openstack-client
+# Cookbook Name:: openstack_client
 # Library:: openstack
 # Author:: Paul Czarkowski
 #
@@ -24,7 +24,7 @@ module Openstack
       begin
         require 'fog'
       rescue LoadError
-        Chef::Log.error("Missing gem 'fog'. Use the default openstack-client recipe to install it first.")
+        Chef::Log.error("Missing gem 'fog'. Use the default openstack_client recipe to install it first.")
       end
     end
   end

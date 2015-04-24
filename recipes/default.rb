@@ -1,6 +1,6 @@
 # Encoding: utf-8
 #
-# Cookbook Name:: openstack-client
+# Cookbook Name:: openstack_client
 # Recipe:: default
 #
 # Copyright 2014, Paul Czarkowski
@@ -22,11 +22,11 @@ end
 include_recipe 'xml::ruby'
 
 chef_gem 'nokogiri' do
-  version node['openstack-client']['nokogiri_version']
+  version node['openstack_client']['nokogiri_version']
   action :upgrade
 end
 
 chef_gem 'fog' do
-  version node['openstack-client']['fog_version']
+  version node['openstack_client']['fog_version']
   action :upgrade
 end
