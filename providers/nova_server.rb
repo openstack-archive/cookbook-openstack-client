@@ -16,9 +16,6 @@
 # limitations under the License.
 #
 
-require 'tempfile'
-require 'chef/digester'
-
 include Openstack::Client::Nova
 
 def whyrun_supported?
