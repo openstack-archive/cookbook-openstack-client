@@ -22,14 +22,14 @@ module Openstack
     module Nova
       include Openstack::Client
 
-      def nova # rubocop:disable all
+      def nova
         @nova ||= Fog::Compute.new(provider: 'openstack',
                                    openstack_username: new_resource.openstack_username,
                                    openstack_api_key: new_resource.openstack_password,
                                    openstack_auth_url: new_resource.openstack_auth_url,
                                    openstack_tenant: new_resource.openstack_tenant,
                                    openstack_region: new_resource.openstack_region
-                                  ) # rubocop:disable all
+                                  )
       end
     end
   end

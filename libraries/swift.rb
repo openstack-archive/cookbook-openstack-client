@@ -22,7 +22,7 @@ module Openstack
     module Swift
       include Openstack::Client
 
-      def swift # rubocop:disable all
+      def swift
         @swift ||= Fog::Storage.new(provider: 'openstack',
                                     openstack_username: new_resource.openstack_username,
                                     openstack_api_key: new_resource.openstack_password,
@@ -34,7 +34,7 @@ module Openstack
                                     openstack_service_name: new_resource.openstack_service_name,
                                     openstack_service_type: new_resource.openstack_service_type,
                                     openstack_endpoint_type: new_resource.openstack_endpoint_type
-                                   ) # rubocop:disable all
+                                   )
       end
     end
   end

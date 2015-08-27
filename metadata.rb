@@ -1,11 +1,11 @@
 # Encoding: utf-8
 name 'openstack_client'
 maintainer 'openstack-chef'
-maintainer_email 'opscode-chef-openstack@googlegroups.com'
+maintainer_email 'openstack-dev@lists.openstack.org'
 license 'Apache2'
-description 'Library cookbook to interact with Openstack Clouds'
+description 'Library cookbook to interact with OpenStack Clouds'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '11.0.0'
+version '12.0.0'
 
 supports 'ubuntu', '>= 14.04'
 supports 'centos', '>= 6.5'

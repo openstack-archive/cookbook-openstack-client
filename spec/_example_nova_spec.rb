@@ -9,10 +9,7 @@ describe 'openstack_client::_example_nova' do
 
   it 'spins up a test machine' do
     expect(chef_run).to create_openstack_client_nova_server(
-      'test1'
-                        ).with(
-                          action: [:create]
-                        )
+      'test1').with(action: [:create])
   end
 end
 
@@ -23,10 +20,7 @@ describe 'openstack_client::_example_nova' do
 
   it 'deletes a test machine' do
     expect(chef_run).to delete_openstack_client_nova_server(
-      'test'
-                        ).with(
-                          action: [:delete]
-                        )
+      'test').with(action: [:delete])
   end
 end
 
