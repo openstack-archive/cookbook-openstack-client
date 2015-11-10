@@ -4,7 +4,6 @@ berks-cookbooks/
 .vagrant
 .coverage/
 *.swp
-Berksfile.lock
 Vagrantfile
 Gemfile.lock
 local-mode-cache
