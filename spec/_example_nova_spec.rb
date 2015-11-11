@@ -30,7 +30,7 @@ describe 'openstack_client::_example_nova' do
   let(:chef_run) { runner.converge(described_recipe) }
 
   it 'install the nokogiri gem' do
-    expect(chef_run).to install_chef_gem('nokogiri')
+    expect(chef_run).to upgrade_chef_gem('nokogiri')
   end
 
   it 'install the fog gem' do
