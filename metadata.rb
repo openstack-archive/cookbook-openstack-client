@@ -1,7 +1,7 @@
 # Encoding: utf-8
 name 'openstack_client'
 maintainer 'openstack-chef'
-maintainer_email 'openstack-dev@lists.openstack.org'
+maintainer_email 'openstack-discuss@lists.openstack.org'
 license 'Apache2'
 description 'Library cookbook to interact with OpenStack Clouds'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
