@@ -48,7 +48,7 @@ Contributing
 ------------
 
 Please use the typical Contrubution rules we have set up [here](https://wiki.openstack.org/wiki/Chef/GettingStarted#Contributing_to_the_OpenStack_Chef_Cookbooks),
-if you have any questions about this book please go to `irc.freenode.net:#openstack-chef` or contact the [mailing-list](http://groups.google.com/group/opscode-chef-openstack).
+if you have any questions about this book please go to `irc.oftc.net:#openstack-chef` or contact the [mailing-list](http://groups.google.com/group/opscode-chef-openstack).
 
 License and Authors
 -------------------
